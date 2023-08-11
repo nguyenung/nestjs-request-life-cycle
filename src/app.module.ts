@@ -6,10 +6,10 @@ import {
 } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { GlobalMiddleware } from './global.middleware';
-import { ControllerMiddleware } from './controller.middleware';
+import { GlobalMiddleware } from './middleware/global.middleware';
+import { ControllerMiddleware } from './middleware/controller.middleware';
 import { CatsController } from './cats/cats.controller';
-import { RouteMiddleware } from './route.middleware';
+import { RouteMiddleware } from './middleware/route.middleware';
 
 @Module({
   imports: [],

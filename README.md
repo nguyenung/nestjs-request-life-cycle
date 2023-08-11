@@ -1,7 +1,9 @@
 # NestJS life cycle
 
-![NestJS life cycle](./nestjs-life-cycle.png)
+![NestJS request life cycle](./images/nestjs-request-life-cycle.png)
 
-![Detail](./detail.avif)
+![NestJS life cycle](./images/nestjs-life-cycle.png)
 
-![Result](./order.png)
+![Detail](./images/detail.avif)
+
+![Result](./images/order.png)

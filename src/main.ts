@@ -1,10 +1,10 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { functionMiddleware } from './function.middleware';
-import { GlobalGuard } from './global.guard';
-import { GlobalInterceptor } from './global.interceptor';
-import { GlobalPipe } from './global.pipe';
+import { functionMiddleware } from './middleware/function.middleware';
+import { GlobalGuard } from './guards/global.guard';
+import { GlobalInterceptor } from './interceptors/global.interceptor';
+import { GlobalPipe } from './pipes/global.pipe';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);

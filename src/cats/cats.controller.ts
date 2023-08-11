@@ -7,12 +7,12 @@ import {
   UseInterceptors,
   UsePipes,
 } from '@nestjs/common';
-import { ControllerGuard } from 'src/controller.guard';
-import { ControllerInterceptor } from 'src/controller.interceptor';
-import { ControllerPipe } from 'src/controller.pipe';
-import { RouteGuard } from 'src/route.guard';
-import { RouteInterceptor } from 'src/route.interceptor';
-import { RoutePipe } from 'src/route.pipe';
+import { ControllerGuard } from 'src/guards/controller.guard';
+import { ControllerInterceptor } from 'src/interceptors/controller.interceptor';
+import { ControllerPipe } from 'src/pipes/controller.pipe';
+import { RouteGuard } from 'src/guards/route.guard';
+import { RouteInterceptor } from 'src/interceptors/route.interceptor';
+import { RoutePipe } from 'src/pipes/route.pipe';
 
 @Controller('cats')
 @UseGuards(ControllerGuard)
